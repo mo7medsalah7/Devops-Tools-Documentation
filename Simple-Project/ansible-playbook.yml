@@ -18,6 +18,9 @@
     - name: build docker image using the Dockerfile
       command: docker build -t mo7medsalah7/comingsoon-page .
 
+    -name: tagging docker image
+     command: docker tag mo7medsalah7/comingsoon-page:latest new-repo:latest
+
     - name: Push Image to dockerhub
       command: docker push mo7medsalah7/comingsoon-page:latest
 

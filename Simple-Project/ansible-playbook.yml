@@ -15,9 +15,6 @@
       command: docker rmi mo7medsalah7/comingsoon-page
       ignore_errors: yes
       
-    - name: Login docker 
-      command: docker login -u mo7medsalah7 --password-stdin zad1520zad
-      
     - name: build docker image using the Dockerfile
       command: docker build -t mo7medsalah7/comingsoon-page .
 
